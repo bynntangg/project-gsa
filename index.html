@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Gemini Flow - 7 Fitur Keren ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <span class="gsa-badge">BINTANG</span>
+                <span>Google Gemini</span>
+            </div>
+            <div class="score-box">
+                <span>🏆 Poin</span>
+                <span id="score">0</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Visual Area -->
+            <div class="visual-area">
+                <div id="bg-layer" class="bg-layer"></div>
+                
+                <!-- Character -->
+                <div class="character-container">
+                    <img id="character" src="" alt="Bintang GSA" class="character-img">
+                    <div class="character-glow"></div>
+                </div>
+
+                <!-- Step Badge -->
+                <div class="step-badge" id="step-badge">
+                    <span class="step-number" id="current-step">1</span>
+                    <span class="step-separator">/</span>
+                    <span class="step-total" id="total-steps">25</span>
+                </div>
+
+                <!-- Feature Chip -->
+                <div class="feature-chip hidden" id="feature-chip">
+                    <span class="chip-icon" id="chip-icon">✨</span>
+                    <span class="chip-text" id="chip-text">Fitur</span>
+                </div>
+            </div>
+
+            <!-- Chat Panel -->
+            <div class="chat-panel">
+                <div class="chat-header">
+                    <div class="speaker-info">
+                        <span class="speaker-name" id="speaker-name">Bintang Permana</span>
+                        <span class="speaker-badge">Candidate Google Student Ambassador</span>
+                    </div>
+                    <div class="typing-indicator" id="typing">⚡</div>
+                </div>
+                
+                <div class="message-bubble" id="message">
+                    Halo! Aku Bintang Permana. Yuk belajar 7 fitur Gemini!
+                </div>
+                
+                <!-- Flow Diagram Container -->
+                <div id="flow-container" class="flow-container"></div>
+                
+                <!-- Simulation Container -->
+                <div id="simulation-container" class="simulation-container"></div>
+                
+                <!-- Choice Panel (Fallback) -->
+                <div id="choice-panel" class="choice-panel hidden">
+                    <div class="choice-grid" id="choice-grid"></div>
+                </div>
+
+                <!-- Next Button (Default) -->
+                <button class="next-btn hidden" id="next-btn">
+                    <span>Lanjut ke Fitur Berikutnya</span>
+                    <span class="next-icon">→</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Success Popup -->
+        <div id="success-popup" class="success-popup hidden">
+            <div class="popup-content">
+                <div class="popup-icon" id="popup-icon">✨</div>
+                <div class="popup-title" id="popup-title">Berhasil!</div>
+                <div class="popup-desc" id="popup-desc">Kamu memahami fitur ini</div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" class="end-screen hidden">
+            <div class="end-card">
+                <h2>🎓 Selamat!</h2>
+                <div class="final-score-circle">
+                    <span id="final-score">0</span>
+                </div>
+                <div class="rank-card" id="rank-card">
+                    <span class="rank-title">✨ Gemini Master ✨</span>
+                </div>
+                <p class="final-quote" id="final-quote">Kamu sudah siap jadi Google Student Ambassador!</p>
+                <button class="restart-btn" onclick="location.reload()">
+                    <span>🔄</span> Main Lagi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
